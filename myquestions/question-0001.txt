@@ -1,0 +1,13 @@
+En un laboratorio de espectroscopía se registran mediciones de intensidad de distintas longitudes de onda para clasificar muestras minerales.
+Cada fila del DataFrame representa una muestra, y cada columna numérica representa la intensidad registrada en una banda espectral distinta. La variable objetivo indica el tipo de mineral. Sin embargo:
+•	algunas intensidades tienen valores faltantes (NaN), 
+•	distintas bandas pueden estar en escalas diferentes, 
+•	y algunas muestras tienen una señal total casi nula, por lo que deben descartarse antes del análisis. 
+Escribe una función llamada preparar_firmas_espectrales(df, target_col, umbral_minimo) que realice lo siguiente:
+1.	Separe las características X de la variable objetivo y, indicada por target_col. 
+2.	Impute los valores faltantes en X usando el promedio de cada columna, utilizando SimpleImputer de sklearn. 
+3.	Elimine las filas cuya suma de intensidades en X sea menor que umbral_minimo. 
+4.	Normalize cada fila restante de X usando norma L2, utilizando normalize de sklearn.preprocessing. 
+5.	Devuelva dos arrays de numpy: 
+o	la matriz X procesada, 
+o	el vector y correspondiente a las filas conservadas.
