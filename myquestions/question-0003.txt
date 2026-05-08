@@ -1,0 +1,16 @@
+En un laboratorio de energía renovable se están analizando mediciones de paneles solares para clasificar si una instalación está operando de manera eficiente o no.
+Cada fila del DataFrame representa una instalación observada en un momento determinado, y cada columna numérica contiene mediciones como:
+•	radiación solar, 
+•	temperatura del panel, 
+•	voltaje generado, 
+•	corriente generada, 
+•	ángulo de inclinación. 
+Sin embargo, algunas mediciones tienen valores faltantes (NaN). Además, antes de usar estos datos en un modelo de machine learning, se quiere conservar únicamente las variables más informativas, descartando aquellas cuya variabilidad sea demasiado baja.
+Escribe una función llamada filtrar_y_escalar_datos_solares(df, target_col, umbral_varianza) que realice lo siguiente:
+1.	Separe las características X de la variable objetivo y, indicada por target_col. 
+2.	Impute los valores faltantes en X usando el promedio de cada columna, utilizando SimpleImputer de sklearn. 
+3.	Elimine las columnas de X cuya varianza sea menor o igual a umbral_varianza. 
+4.	Escale las características restantes para que tengan media 0 y desviación estándar 1, utilizando StandardScaler de sklearn. 
+5.	Devuelva dos arrays de numpy: 
+o	la matriz X procesada, 
+o	el vector y.
