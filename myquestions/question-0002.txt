@@ -1,0 +1,16 @@
+En un centro de investigación oceánica se están analizando mediciones de corrientes marinas para clasificar zonas del océano según su nivel de estabilidad.
+Cada fila del DataFrame representa una observación marina, y cada columna numérica representa una medición registrada por sensores, como por ejemplo:
+•	velocidad de la corriente, 
+•	temperatura del agua, 
+•	salinidad, 
+•	profundidad, 
+•	concentración de oxígeno. 
+Sin embargo, algunas mediciones presentan valores faltantes (NaN). Además, algunas columnas tienen valores extremadamente grandes en comparación con otras, por lo que se necesita transformar los datos antes de utilizarlos en un modelo de machine learning.
+Escribe una función llamada transformar_datos_oceanicos(df, target_col) que realice lo siguiente:
+1.	Separe las características X de la variable objetivo y, indicada por target_col. 
+2.	Impute los valores faltantes en X usando el promedio de cada columna, utilizando SimpleImputer de sklearn. 
+3.	Aplique una transformación logarítmica log(1 + x) a todas las características de X usando numpy. 
+4.	Escale las características transformadas para que queden en el rango entre 0 y 1, utilizando MinMaxScaler de sklearn. 
+5.	Devuelva dos arrays de numpy: 
+o	la matriz X procesada, 
+o	el vector y.
