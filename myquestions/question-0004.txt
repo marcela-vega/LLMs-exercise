@@ -1,0 +1,22 @@
+En un centro de investigación biomédica se están analizando registros de pacientes para predecir si una persona presenta alto riesgo de una enfermedad inflamatoria.
+Cada fila del DataFrame representa un paciente, y las columnas contienen información clínica de distintos tipos. Algunas columnas son numéricas, como por ejemplo:
+•	edad, 
+•	nivel de proteína C reactiva, 
+•	presión arterial, 
+•	colesterol. 
+Otras columnas son categóricas, como por ejemplo:
+•	sexo, 
+•	grupo sanguíneo, 
+•	hábito de fumar. 
+Sin embargo, el conjunto de datos contiene valores faltantes (NaN) tanto en variables numéricas como categóricas. Para poder usar estos datos en un modelo de machine learning, se necesita preprocesarlos adecuadamente.
+Escribe una función llamada preprocesar_datos_clinicos(df, target_col) que realice lo siguiente:
+1.	Separe las características X de la variable objetivo y, indicada por target_col. 
+2.	Identifique las columnas numéricas y las columnas categóricas de X. 
+3.	Impute los valores faltantes en las columnas numéricas usando el promedio de cada columna, utilizando SimpleImputer de sklearn. 
+4.	Impute los valores faltantes en las columnas categóricas usando el valor más frecuente, utilizando SimpleImputer de sklearn. 
+5.	Escale las columnas numéricas imputadas para que tengan media 0 y desviación estándar 1, utilizando StandardScaler de sklearn. 
+6.	Codifique las columnas categóricas imputadas usando OneHotEncoder de sklearn, con handle_unknown='ignore'. 
+7.	Combine todas las características procesadas en una sola matriz X. 
+8.	Devuelva dos arrays de numpy: 
+o	la matriz X procesada, 
+o	el vector y.
