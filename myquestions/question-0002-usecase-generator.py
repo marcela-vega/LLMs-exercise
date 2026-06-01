@@ -57,18 +57,18 @@ def generar_caso_de_uso_transformar_datos_oceanicos():
     return input_data, output_data
 
 
-# Ejemplo
-if __name__ == "__main__":
-    entrada, salida_esperada = generar_caso_de_uso_transformar_datos_oceanicos()
+# # Ejemplo
+# if __name__ == "__main__":
+#     entrada, salida_esperada = generar_caso_de_uso_transformar_datos_oceanicos()
 
-    print("=== INPUT ===")
-    print("Nombre de la función esperada: transformar_datos_oceanicos")
-    print("target_col:", entrada["target_col"])
-    print(entrada["df"])
+#     print("=== INPUT ===")
+#     print("Nombre de la función esperada: transformar_datos_oceanicos")
+#     print("target_col:", entrada["target_col"])
+#     print(entrada["df"])
 
-    print("\n=== OUTPUT ESPERADO ===")
-    X_res, y_res = salida_esperada
-    print("X procesada:")
-    print(X_res)
-    print("\ny:")
-    print(y_res)
+#     print("\n=== OUTPUT ESPERADO ===")
+#     X_res, y_res = salida_esperada
+#     print("X procesada:")
+#     print(X_res)
+#     print("\ny:")
+#     print(y_res)

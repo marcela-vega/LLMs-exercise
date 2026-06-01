@@ -76,16 +76,16 @@ def generar_caso_de_uso_preprocesar_datos_clinicos():
     return input_data, output_data
 
 
-# Ejemplo
-if __name__ == "__main__":
-    entrada, salida_esperada = generar_caso_de_uso_preprocesar_datos_clinicos()
+# # Ejemplo
+# if __name__ == "__main__":
+#     entrada, salida_esperada = generar_caso_de_uso_preprocesar_datos_clinicos()
 
-    print("=== INPUT ===")
-    print("Nombre de la función esperada: preprocesar_datos_clinicos")
-    print("target_col:", entrada["target_col"])
-    print(entrada["df"])
+#     print("=== INPUT ===")
+#     print("Nombre de la función esperada: preprocesar_datos_clinicos")
+#     print("target_col:", entrada["target_col"])
+#     print(entrada["df"])
 
-    print("\n=== OUTPUT ESPERADO ===")
-    X_res, y_res = salida_esperada
-    print("Shape de X procesada:", X_res.shape)
-    print("y:", y_res)
+#     print("\n=== OUTPUT ESPERADO ===")
+#     X_res, y_res = salida_esperada
+#     print("Shape de X procesada:", X_res.shape)
+#     print("y:", y_res)

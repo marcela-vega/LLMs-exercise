@@ -61,19 +61,19 @@ def generar_caso_de_uso_preparar_firmas_espectrales():
     return input_data, output_data
 
 
-# Ejemplo
-if __name__ == "__main__":
-    entrada, salida_esperada = generar_caso_de_uso_preparar_firmas_espectrales()
+# # Ejemplo
+# if __name__ == "__main__":
+#     entrada, salida_esperada = generar_caso_de_uso_preparar_firmas_espectrales()
 
-    print("=== INPUT ===")
-    print("Nombre de la función esperada: preparar_firmas_espectrales")
-    print("target_col:", entrada["target_col"])
-    print("umbral_minimo:", entrada["umbral_minimo"])
-    print(entrada["df"])
+#     print("=== INPUT ===")
+#     print("Nombre de la función esperada: preparar_firmas_espectrales")
+#     print("target_col:", entrada["target_col"])
+#     print("umbral_minimo:", entrada["umbral_minimo"])
+#     print(entrada["df"])
 
-    print("\n=== OUTPUT ESPERADO ===")
-    X_res, y_res = salida_esperada
-    print("X procesada:")
-    print(X_res)
-    print("\ny:")
-    print(y_res)
+#     print("\n=== OUTPUT ESPERADO ===")
+#     X_res, y_res = salida_esperada
+#     print("X procesada:")
+#     print(X_res)
+#     print("\ny:")
+#     print(y_res)
