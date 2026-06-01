@@ -1,0 +1,12 @@
+Pregunta 0437
+
+El validador marca "usecase generator error" porque el generador de casos de uso asignado a la pregunta 0437 no cumple el formato esperado por el validador.
+
+El validador espera que el generador retorne una tupla de dos elementos:
+(input_data, output_data)
+
+Sin embargo, el generador ejecutado para la pregunta 0437 retorna directamente un DataFrame. Por eso aparece el error:
+
+"Must return two values (tuple), got DataFrame."
+
+Este error ocurre antes de ejecutar mi solución answer-0437.py, por lo tanto no corresponde a un error de ejecución de mi respuesta.
